@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+.wrapper {
+    width: 100vw;
+    height: auto;
+}
+
+/* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background:  url(../images/header_bg.jpg) center center no-repeat;
+    background-size: cover;
+    transition:   0.4s;
+}
+
+.header_content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.header_navbar {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header_navbar h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.header_navbar ul {
+    display: flex;
+}
+
+.nav_items li {
+    margin: 0 15px;
+}
+.nav_items a {
+    color: #fff;
+}
+
+.header_content_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.header_content_title p {
+    color: #fff;
+    font-size: 54px;
+    width: 66.66666667%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.header_btns button {
+    padding: 20px 40px;
+    font-size: 16px;
+    margin: 0 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.4s , border 0.4s;
+}
+
+.header_btns button:nth-child(1) {
+    background-color: #1A57A4;
+    border: 2px solid #1A57A4;
+}
+
+.header_btns button:nth-child(2):hover {
+    background: rgba(255,255,255,.3);
+}
+
+.header_btns button:nth-child(1):hover {
+    background-color: #103463;
+    border-color: #103463;
+}
+.header_btns button:nth-child(1):visited{
+    color: blueviolet;
+}
+
+
+.header_btns button:nth-child(2) {
+    background-color: transparent;
+    border: 2px solid rgb(211, 182, 182);
+}
+.nav_items li:hover{
+    text-decoration: underline;
+}
+/* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
+
+
+
+/* CONTENT *//* CONTENT *//* CONTENT *//* CONTENT */
+
+.content {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 60px;
+    background-color: #fff;
+}
+
+
+.content_items {
+    width: 33.333333%;
+    padding: 30px;
+}
+
+.content_items > .content_icon i {
+    color: #1A57A4;
+    font-size: 80px;
+}
+
+
+.content_items > .content_icon {
+    margin-bottom: 50px;
+}
+
+.content_items h2 {
+    color: #1A57A4;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.content_items p {
+    font-size: 16px;
+    color: #74777D;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.content_items a {
+    font-size: 16px;
+}
+
+.content_items a:hover > i {
+    transform: translateX(15px);
+}
+
+.content_items a i {
+    font-size: 12px;
+    margin-left: 8px;
+    transition:transform 0.4s;
+}
+
+/* CONTENT *//* CONTENT *//* CONTENT *//* CONTENT */
+
+
+/* FEATURES *//* FEATURES *//* FEATURES *//* FEATURES */
+
+
+.features {
+    background-color: #D6E6F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #1A57A4;
+    margin-bottom: 30px;
+}
+
+.features p {
+    max-width: 60%;
+    text-align: center;
+    color: #74777D;
+}
+
+.features_content {
+    width: 100vw;
+    height: auto;
+    margin: 70px;
+}
+
+
+.features_content_item {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.features_content_item > img , .features_content_item > .features_content_title {
+    flex: 1 1;
+}
+h3{
+    padding: 0 100px;
+    font-size: 36px;
+    color: #1A57A4;
+}
+h5{  
+    padding: 0 100px;
+    color: #74777D;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: "Open Sans", Arial, sans-serif; 
+}
+.features_content_title > ul {
+    padding: 0 100px;
+    color: #74777D;
+    font-size: 16px;
+    list-style: none;
+    margin-top: 20px;
+}
+.sss{
+    color:#1A57A4 ;
+    float: left;
+}
+/* FEATURES *//* FEATURES *//* FEATURES *//* FEATURES */
+
+ 
+/*PRICE*//*PRICE*//*PRICE*//*PRICE*//*PRICE*//*PRICE*//*PRICE*/
+.price{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+.price > h1{
+    color: black;
+    font-family: "Open Sans", Arial , sans-serif ;
+    font-size: 50px;
+    padding: 0px 0px 30px;
+    margin: 20px 0px 30px;
+    text-align: center;
+    justify-content: center;
+}
+.price > p{
+    font-family: "Open Sans", Arial , sans-serif ;
+    margin: 0 0 30px;
+    color: #74777D;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+.price_items{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding-left: 50px;
+
+}
+.free{
+    width: 360px;
+    height:537px;
+    border: 0.5px solid black;
+    font-family: "Open Sans", Arial , sans-serif ;
+    text-align: center;
+}
+.free > p{
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: "Open Sans", Arial , sans-serif ;
+    text-align: center;
+}
+.free > h1{
+    margin: 15px;
+    font-size: 62px;
+    color: #1A57A4;
+    font-family: "Open Sans", Arial , sans-serif ;
+    font-weight: 200;
+}
+.free > h6{
+    font-size: 14px;
+    font-family: "Open Sans", Arial , sans-serif ;
+    color: #bdbdbd;
+    margin-top: 70px ;
+}
+
+.free > ul{
+    margin-top: 30px;
+    padding: 0 35px;
+    text-align: left;
+    font-family: "Open Sans", Arial , sans-serif ;
+    font-size: 16px;
+    color:#73767c;
+}
+.btns {
+    margin-top: 70px;
+    background-color: #000000;
+    width: 163px;
+    height: 44px;
+    color: #fff;
+    font-family: "Open Sans", Arial , sans-serif ;
+    font-size: 16px;
+    border: none;
+}
+.sp{
+    margin-top: 70px;
+    background-color: #1A57A4;
+    width: 163px;
+    height: 44px;
+    color: #fff;
+    font-family: "Open Sans", Arial , sans-serif ;
+    font-size: 16px;
+    border: none;
+}
+.btns:hover{
+    background-color:#262626;
+    transition: 0.4s;
+}
+.sp:hover{
+    background-color: #103463;
+    transition: 0.4s;
+}
+.nitem{
+box-shadow: 5px 5px  30px;
+}
+
+/*PRICE*//*PRICE*//*PRICE*//*PRICE*//*PRICE*//*PRICE*//*PRICE*//*PRICE*/
+
+
+/*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*/
+.information{
+    width: 100%;
+    height: auto;
+    background-color: #D6E6F2;
+    margin-top: 70px;
+}
+.information_title > h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+.information_title > p {
+    margin-top: 30px; 
+    font-family: "Open Sans", Arial , sans-serif ;
+    font-size: 16px;
+    color:#73767c;
+    text-align: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+.information_items{
+        width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.information_items > .James{
+    width: 360px;
+    height: 480px;
+    border: white;
+    background-color: white;
+    padding: 10px 20px;   
+}
+.James > p {
+    padding: 5px 5px;
+    font-family: "Open Sans", Arial , sans-serif ;
+    font-size: 17.5px;
+    margin-top: 10px;
+    font-style: italic;
+
+}
+.img > .jpg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img_item{
+    border-radius: 50%;
+    overflow-x: hidden;
+    width: 80px;
+    height: 80px;
+}
+.star{
+    color: yellow;
+    margin-top: 20px;
+}
+.btns:hover{
+transition: 0.4s;
+}
+.nitem{ w
+text-align: center;
+}
+/*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*//*INFORMATION*/
